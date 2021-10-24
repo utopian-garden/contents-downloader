@@ -11,7 +11,18 @@
   display: none;
 }
 
-/**/
+img#image {
+  max-width: 1000px;
+  max-height: 1280px;
+  object-fit: contain
+}
+
+video#image {
+  max-width: 1000px;
+  max-height: 1280px;
+  object-fit: contain
+}
+
 #page {
   transform: scale(0.95, 0.95);
   margin-top: -35px;
@@ -70,4 +81,8 @@ img.preview {
   height:auto;
   max-width:190px;
   max-height:190px;
+}
+
+#headerlogo {
+  display: none;
 }

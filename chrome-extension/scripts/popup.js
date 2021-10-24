@@ -89,11 +89,6 @@ document.getElementById('dl-refill').addEventListener('click', () => {
   queRefill('Download');
 }, false);
 
-// Favorite の refillQueue を実行するイベントリスナー
-document.getElementById('fav-refill').addEventListener('click', () => {
-  queRefill('Favorite');
-}, false);
-
 // Ignore の refillQueue を実行するイベントリスナー
 document.getElementById('ig-refill').addEventListener('click', () => {
   queRefill('Ignore');
