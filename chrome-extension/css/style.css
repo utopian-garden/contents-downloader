@@ -61,9 +61,11 @@ img.preview:not(.favorited):not([title~="Rating:Safe"]) {
   border:2px solid #F00 !important;
 }
 
+/* 特定コンテンツのグレーアウト
 img.preview[title~="Rating:Safe"] {
   filter: saturate(0%);
 }
+*/
 
 /* サムネイルの表示調整 */
 div.content {
