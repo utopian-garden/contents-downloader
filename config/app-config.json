@@ -3,6 +3,12 @@
     "dlDir": "./_download",
     "dlOkDir": "./_download/_ok",
     "dlNgDir": "./_download/_ng",
+    "dlImageDir": "./_image",
+    "dlImageOkDir": "./_image/_ok",
+    "dlImageNgDir": "./_image/_ng",
+    "dlVideoDir": "./_video",
+    "dlVideoOkDir": "./_video/_ok",
+    "dlVideoNgDir": "./_video/_ng",
     "igDir": "./_ignored",
     "igOkDir": "./_ignored/_ok",
     "igNgDir": "./_ignored/_ng",
@@ -15,7 +21,9 @@
     "orderBat": "Order.bat",
     "orderLst": "Order.lst",
     "orderPs1": "Order.ps1",
-    "toolDir": "./tool"
+    "toolDir": "./tool",
+    "imageExts": ["jpg", "png"],
+    "videoExts": ["gif", "mp4", ".ogv", ".swf", "webm"]
   },
   "organize": {
     "assortRule": [

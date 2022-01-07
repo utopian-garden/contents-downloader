@@ -5,7 +5,8 @@
 *.png
 *.txt
 _artist/
-_download/
+_image/
+_video/
 _ignored/
 _studio/
 dynamodb_local_latest/DynamoDBLocal_lib/
