@@ -2,14 +2,14 @@ Import-Csv Order.lst | ForEach-Object {
 	$ext = $_.extension
 	$dir = $_.directory
 
-	Get-ChildItem . `
-  | Where-Object { $_.Extension -eq $ext } `
+  $INCLUDES = @("*.$ext")
+	Get-ChildItem . -Include $INCLUDES -File .\* `
   | ForEach-Object -Process {
     if (!(Test-Path $dir)) {
       New-Item $dir -ItemType Directory
     }
 
-    Move-Item $_ $dir
+    Move-Item -literalpath $_ $dir -force
   }
 
   if (Test-Path $dir) {
