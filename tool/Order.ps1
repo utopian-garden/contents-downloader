@@ -3,7 +3,7 @@ Import-Csv Order.lst | ForEach-Object {
 	$dir = $_.directory
 
   $INCLUDES = @("*.$ext")
-	Get-ChildItem . -Include $INCLUDES -File .\* `
+	Get-ChildItem -Include $INCLUDES -File *.* `
   | ForEach-Object -Process {
     if (!(Test-Path $dir)) {
       New-Item $dir -ItemType Directory
