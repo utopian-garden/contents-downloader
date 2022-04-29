@@ -74,15 +74,15 @@ div.content {
 }
 
 span.thumb {
-  height: 210px !important;
-  width: 200px !important;
+  height: 320px !important;
+  width: 320px !important;
 }
 
 img.preview {
   width:auto;
   height:auto;
-  max-width:190px;
-  max-height:190px;
+  max-width:320px;
+  max-height:320px;
 }
 
 #headerlogo {
