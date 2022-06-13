@@ -1,21 +1,25 @@
 {
   "name": "Contents Downloader Extension",
   "version": "1.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Chrome Extension for Contents Downloader",
   "content_scripts": [{
-    "matches": ["*://*.sankakucomplex.com/*", "*://*.nyaa.si/*", "*://pc-play.games.dmm.co.jp/play/*", "*://grow-e.cybozu.com/*"],
+    "matches": ["*://*.sankakucomplex.com/*", "*://*.nyaa.si/*"],
     "js": ["scripts/content.js"],
     "css": ["css/style.css"]
   }],
   "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
+    "service_worker": "scripts/background.js"
   },
-  "web_accessible_resources": [
-    "popup.html"
-  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "popup.html"
+    ],
+    "matches": [
+      "*://*.sankakucomplex.com/*",
+      "*://*.nyaa.si/*"
+    ]
+  }],
   "browser_action": {
     "default_title": "Contents Downloader Extension",
     "default_popup": "popup.html"
