@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
   let video = document.getElementById('image');
   if (video && video !== undefined) {
     if (video.tagName === 'VIDEO') {
-      video.volume = 0.2;
+      video.volume = 0.25;
       video.loop = false;
     }
   }
