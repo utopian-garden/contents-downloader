@@ -14,78 +14,50 @@ const addRequest = (tagKey, addTab) => {
 
 // コンテキストメニューの Download をクリックした場合
 chrome.contextMenus.create({
+  id: "link-download",
   title: "Download",
   contexts: ["link"],
-  type: "normal",
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"],
-  onclick: info => {
-    const tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
-    addRequest(tagKey, 'Download');
-  }
+  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
 // コンテキストメニューの Favorite をクリックした場合
 chrome.contextMenus.create({
+  id: "link-favorite",
   title: "Favorite",
   contexts: ["link"],
-  type: "normal",
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"],
-  onclick: info => {
-    const tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
-    addRequest(tagKey, 'Favorite');
-  }
+  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
 // コンテキストメニューの Download をクリックした場合
 chrome.contextMenus.create({
+  id: "page-download",
   title: "Download",
   contexts: ["page"],
-  type: "normal",
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*post/show/*"],
-  onclick: info => {
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      chrome.tabs.sendMessage(tabs[0].id, {'type':'download'});
-    });
-  }
+  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
 // コンテキストメニューの Favorite をクリックした場合
 chrome.contextMenus.create({
+  id: "page-favorite",
   title: "Favorite",
   contexts: ["page"],
-  type: "normal",
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*post/show/*"],
-  onclick: info => {
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      chrome.tabs.sendMessage(tabs[0].id, {'type':'favorite'});
-    });
-  }
+  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
 // コンテキストメニューの Open をクリックした場合
 chrome.contextMenus.create({
+  id: "page-open-link",
   title: "Open links",
   contexts: ["page"],
-  type: "normal",
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*&tags*"],
-  onclick: info => {
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      chrome.tabs.sendMessage(tabs[0].id, {'type':'open'});
-    });
-  }
+  documentUrlPatterns: ["*://*.nyaa.si/*"]
 });
 
 // コンテキストメニューの Get をクリックした場合
 chrome.contextMenus.create({
+  id: "page-get-link",
   title: "Get links",
   contexts: ["page"],
-  type: "normal",
-  documentUrlPatterns: ["*://*.nyaa.si/*"],
-  onclick: info => {
-    chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-      chrome.tabs.sendMessage(tabs[0].id, {'type':'get'});
-    });
-  }
+  documentUrlPatterns: ["*://*.nyaa.si/*"]
 });
 
 // コンテンツからメッセージを受信した場合
@@ -106,3 +78,48 @@ chrome.runtime.onMessage.addListener(msg => {
       break;
   }
 });
+
+let tagKey;
+
+function contextClick(info, tab) {
+  const { menuItemId} = info
+
+  switch (menuItemId) {
+    case "link-download":
+      tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
+      addRequest(tagKey, 'Download');
+
+      break;
+    case "link-favorite":
+      tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
+      addRequest(tagKey, 'Favorite');
+
+      break;
+    case "page-download":
+      chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+        chrome.tabs.sendMessage(tabs[0].id, {'type':'download'});
+      });
+
+      break;
+    case "page-favorite":
+      chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+        chrome.tabs.sendMessage(tabs[0].id, {'type':'favorite'});
+      });
+
+      break;
+    case "page-open-link":
+      chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+        chrome.tabs.sendMessage(tabs[0].id, {'type':'open'});
+      });
+
+      break;
+    case "page-get-link":
+      chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+        chrome.tabs.sendMessage(tabs[0].id, {'type':'get'});
+      });
+
+      break;
+  }
+}
+
+chrome.contextMenus.onClicked.addListener(contextClick);
