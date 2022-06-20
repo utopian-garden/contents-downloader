@@ -52,26 +52,9 @@ window.addEventListener('load', () => {
     detailDiv.appendChild(detailLink);
     postContent.insertBefore(detailDiv, nodeInfo);
   }
-
-  // タイムカードの自動入力
-  document.getElementsByName("PIn.Hour").forEach(pinHour => {
-    pinHour.value =9;
-  });
-
-  document.getElementsByName("POut.Hour").forEach(pinHour => {
-    pinHour.value =18;
-  });
-
-  document.getElementsByName("Out.Hour").forEach(pinHour => {
-    pinHour.value =12;
-  });
-
-  document.getElementsByName("In.Hour").forEach(pinHour => {
-    pinHour.value =13;
-  });
 });
 
-
+//
 chrome.runtime.onMessage.addListener(msg => {
   switch (msg.type) {
     // リンクを取得して開く
