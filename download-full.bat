@@ -4,7 +4,7 @@ title Download
 
 :loop
 
-node ./lib/download.js
+node ./lib/download.js Full
 
 goto :loop
 
