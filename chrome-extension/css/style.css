@@ -70,19 +70,19 @@ img.preview[title~="Rating:Safe"] {
 /* サムネイルの表示調整 */
 div.content {
   width: 90% !important;
-  margin-left: 20px !important;
+  margin-left: 10px !important;
 }
 
 span.thumb {
-  width: 225px !important;
-  height: 230px !important;
+  height: 320px !important;
+  width: 320px !important;
 }
 
 img.preview {
-  width: auto;
-  height: auto;
-  max-width: 210px;
-  max-height: 210px;
+  width:auto;
+  height:auto;
+  max-width:320px;
+  max-height:320px;
 }
 
 #headerlogo {
