@@ -79,10 +79,10 @@ span.thumb {
 }
 
 img.preview {
-  width:auto;
-  height:auto;
-  max-width:320px;
-  max-height:320px;
+  width: auto;
+  height: auto;
+  max-width: 320px;
+  max-height: 320px;
 }
 
 #headerlogo {
