@@ -126,7 +126,8 @@
       "artQueUrl": "http://localhost:9324/queue/Artist",
       "stuQueUrl": "http://localhost:9324/queue/Studio",
       "priorDlQueUrl": "http://localhost:9324/queue/priorDownload",
-      "priorFavQueUrl": "http://localhost:9324/queue/priorFavorite"
+      "priorFavQueUrl": "http://localhost:9324/queue/priorFavorite",
+      "searchQueUrl": "http://localhost:9324/queue/Search"
     },
     "poll": {
       "dlQuePoll": "10",
