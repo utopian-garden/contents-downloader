@@ -130,11 +130,11 @@
       "searchQueUrl": "http://localhost:9324/queue/Search"
     },
     "poll": {
-      "dlQuePoll": "10",
-      "favQuePoll": "10",
-      "igQuePoll": "10",
-      "artQuePoll": "10",
-      "stuQuePoll": "10"
+      "dlQuePoll": "1",
+      "favQuePoll": "1",
+      "igQuePoll": "1",
+      "artQuePoll": "1",
+      "stuQuePoll": "1"
     },
     "msg": {
       "finMsg": "MQ refilling finished: ",
