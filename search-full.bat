@@ -1,6 +1,6 @@
 @echo off
 
-title Search
+title Search-Full
 
 :loop
 
