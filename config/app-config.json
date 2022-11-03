@@ -140,6 +140,9 @@
       "finMsg": "MQ refilling finished: ",
       "startMsg": "MQ refilling started: ",
       "waitingMsg": "Waiting for message..."
+    },
+    "max": {
+      "searchQueMax": 2
     }
   },
   "ng": {
