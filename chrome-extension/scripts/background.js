@@ -20,10 +20,10 @@ chrome.contextMenus.create({
   documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
-// コンテキストメニューの Favorite をクリックした場合
+// コンテキストメニューの Ignore をクリックした場合
 chrome.contextMenus.create({
-  id: "link-favorite",
-  title: "Favorite",
+  id: "link-ignore",
+  title: "Ignore",
   contexts: ["link"],
   documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
@@ -36,10 +36,10 @@ chrome.contextMenus.create({
   documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
-// コンテキストメニューの Favorite をクリックした場合
+// コンテキストメニューの Ignore をクリックした場合
 chrome.contextMenus.create({
-  id: "page-favorite",
-  title: "Favorite",
+  id: "page-ignore",
+  title: "Ignore",
   contexts: ["page"],
   documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
@@ -90,9 +90,9 @@ function contextClick(info, tab) {
       addRequest(tagKey, 'Download');
 
       break;
-    case "link-favorite":
+    case "link-ignore":
       tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
-      addRequest(tagKey, 'Favorite');
+      addRequest(tagKey, 'Ignore');
 
       break;
     case "page-download":
@@ -101,9 +101,9 @@ function contextClick(info, tab) {
       });
 
       break;
-    case "page-favorite":
+    case "page-ignore":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type':'favorite'});
+        chrome.tabs.sendMessage(tabs[0].id, {'type':'ignore'});
       });
 
       break;

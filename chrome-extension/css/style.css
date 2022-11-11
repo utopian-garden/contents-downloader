@@ -51,22 +51,6 @@ video#image {
   font-size: 120%;
 }
 
-/* お気に入り済みコンテンツのグレーアウト */
-img.favorited {
-  filter: saturate(0%);
-}
-
-/* 未閲覧コンテンツのハイライト */
-img.preview:not(.favorited):not([title~="Rating:Safe"]) {
-  border:2px solid #F00 !important;
-}
-
-/* 特定コンテンツのグレーアウト
-img.preview[title~="Rating:Safe"] {
-  filter: saturate(0%);
-}
-*/
-
 /* サムネイルの表示調整 */
 div.content {
   width: 90% !important;
