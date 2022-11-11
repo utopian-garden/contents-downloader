@@ -74,9 +74,9 @@ document.getElementById('download').addEventListener('click', () => {
   addReq('Download');
 }, false);
 
-// Favorite の addItem を実行するイベントリスナー
-document.getElementById('favorite').addEventListener('click', () => {
-  addReq('Favorite');
+// Ignore の addItem を実行するイベントリスナー
+document.getElementById('ignore').addEventListener('click', () => {
+  addReq('Ignore');
 }, false);
 
 // checkDb を実行するイベントリスナー

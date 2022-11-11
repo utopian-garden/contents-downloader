@@ -1,100 +1,90 @@
 {
   "fs": {
-    "dlDir": "./_download",
-    "dlOkDir": "./_download/_ok",
-    "dlNgDir": "./_download/_ng",
-    "dlImageDir": "./_image",
+    "dlImageDir":   "./_image",
     "dlImageOkDir": "./_image/_ok",
     "dlImageNgDir": "./_image/_ng",
-    "dlVideoDir": "./_video",
+    "dlVideoDir":   "./_video",
     "dlVideoOkDir": "./_video/_ok",
     "dlVideoNgDir": "./_video/_ng",
-    "igDir": "./_ignored",
-    "igOkDir": "./_ignored/_ok",
-    "igNgDir": "./_ignored/_ng",
-    "artDir": "./_artist",
-    "artOkDir": "./_artist/_ok",
-    "artNgDir": "./_artist/_ng",
-    "stuDir": "./_studio",
-    "stuOkDir": "./_studio/_ok",
-    "stuNgDir": "./_studio/_ng",
-    "orderBat": "Order.bat",
-    "orderLst": "Order.lst",
-    "orderPs1": "Order.ps1",
-    "toolDir": "./tool",
-    "imageExts": ["jpg", "png"],
-    "videoExts": ["gif", "mp4", ".ogv", ".swf", "webm"]
+    "igDir":        "D:/Sankaku/_ignored",
+    "igOkDir":      "D:/Sankaku/_ignored/_ok",
+    "igNgDir":      "D:/Sankaku/_ignored/_ng",
+    "artDir":       "D:/Sankaku/_artist",
+    "artOkDir":     "D:/Sankaku/_artist/_ok",
+    "artNgDir":     "D:/Sankaku/_artist/_ng",
+    "stuDir":       "D:/Sankaku/_studio",
+    "stuOkDir":     "D:/Sankaku/_studio/_ok",
+    "stuNgDir":     "D:/Sankaku/_studio/_ng",
+    "orderBat":     "Order.bat",
+    "orderLst":     "Order.lst",
+    "orderPs1":     "Order.ps1",
+    "toolDir":      "./tool",
+    "ignoreExts":   ["swf"],
+    "imageExts":    ["jpg", "png"],
+    "videoExts":    ["gif", "mp4", "ogv", "webm"]
   },
   "organize": {
     "assortRule": [
-      {"fileExt": ".gif", "fileType": "gif"},
-      {"fileExt": ".jpg", "fileType": "image"},
-      {"fileExt": ".mp4", "fileType": "video"},
-      {"fileExt": ".ogv", "fileType": "video"},
-      {"fileExt": ".png", "fileType": "image"},
-      {"fileExt": ".swf", "fileType": "swf"},
-      {"fileExt": ".webm", "fileType": "video"}
+      {"fileExt": ".gif",   "fileType": "gif"},
+      {"fileExt": ".jpg",   "fileType": "image"},
+      {"fileExt": ".mp4",   "fileType": "video"},
+      {"fileExt": ".ogv",   "fileType": "video"},
+      {"fileExt": ".png",   "fileType": "image"},
+      {"fileExt": ".swf",   "fileType": "swf"},
+      {"fileExt": ".webm",  "fileType": "video"}
     ],
     "fileThre": 500,
     "msg": {
-      "finMsg": "File organization finished.",
+      "finMsg":   "File organization finished.",
       "startMsg": "File organization started."
     }
   },
   "assign": {
     "msg": {
-      "finMsg": "Tag assigning finished.",
+      "finMsg":   "Tag assigning finished.",
       "startMsg": "Tag assigning started."
     }
   },
   "api": {
     "uri": {
-      "addItemUri": "/addItem",
-      "assignUri": "/assignTag",
-      "chkDbUri": "/checkDb",
-      "getLinkUri": "/getLink",
-      "organizeUri": "/organizeFile",
-      "refillUri": "/refillQueue"
+      "addItemUri":   "/addItem",
+      "assignUri":    "/assignTag",
+      "chkDbUri":     "/checkDb",
+      "getLinkUri":   "/getLink",
+      "organizeUri":  "/organizeFile",
+      "refillUri":    "/refillQueue"
     },
     "msg": {
-      "exceptMsg": "Invalid Request",
-      "startMsg": "API Server started."
+      "exceptMsg":  "Invalid Request",
+      "startMsg":   "API Server started."
     }
   },
   "req": {
     "common": {
-      "userAgent": "SCChannelApp/3.0 (Android; black)"
+      "userAgent":  "SCChannelApp/3.0 (Android; black)"
     },
     "auth": {
       "authPrefix": "Bearer ",
-      "authUrl": "https://capi-v2.sankakucomplex.com/auth/token?lang=japanese",
-      "passWord": "M@jimu$ume7",
-      "userName": "ashi_garden"
+      "authUrl":    "https://capi-v2.sankakucomplex.com/auth/token?lang=japanese",
+      "passWord":   "M@jimu$ume7",
+      "userName":   "ashi_garden"
     },
     "search": {
       "conSearchParam": "+-rating:safe&limit=1&page=",
-      "exSearchParam": "+order:quality+-rating:safe&limit=10&page=",
-      "searchParam": "+-rating:safe&limit=100&page=",
-      "searchUrl": "https://capi-v2.sankakucomplex.com/posts?tags=",
-      "tagSearchUrl": "https://capi-v2.sankakucomplex.com/tags?type=",
+      "exSearchParam":  "+order:quality+-rating:safe&limit=10&page=",
+      "searchParam":    "+-rating:safe&limit=100&page=",
+      "searchUrl":      "https://capi-v2.sankakucomplex.com/posts?tags=",
+      "tagSearchUrl":   "https://capi-v2.sankakucomplex.com/tags?type=",
       "tagSearchParam": "&order=quality&limit=100&page=",
       "artistCode": 1,
       "studioCode": 2
-    },
-    "fav": {
-      "favUrl": "https://capi-v2.sankakucomplex.com/posts/",
-      "favParam": "/favorite?language=japanese"
-    },
-    "vote": {
-      "voteUrl": "https://capi-v2.sankakucomplex.com/posts/",
-      "voteParam": "/vote?language=japanese"
     },
     "dl": {
       "refererUrl": "https://chan.sankakucomplex.com/ja/post/show/"
     },
     "tag": {
-      "tagUrl": "https://capi-v2.sankakucomplex.com/posts/",
-      "tagParam": "?lang=en",
+      "tagUrl":     "https://capi-v2.sankakucomplex.com/posts/",
+      "tagParam":   "?lang=en",
       "refererUrl": "https://chan.sankakucomplex.com/ja/post/show/"
     },
     "poll": {
@@ -103,42 +93,39 @@
   },
   "db": {
     "tab": {
-      "dlTable": "Download",
-      "favTable": "Favorite",
-      "igTable": "Ignore",
+      "dlTable":  "Download",
+      "igTable":  "Ignore",
       "artTable": "Artist",
       "stuTable": "Studio"
     },
     "attr": {
-      "tagAttr": "tag",
+      "tagAttr":  "tag",
       "lastAttr": "last"
     },
     "msg": {
-      "finMsg": "DB update finished: ",
+      "finMsg":   "DB update finished: ",
       "startMsg": "DB update started: "
     }
   },
   "mq": {
     "url": {
-      "dlQueUrl": "http://localhost:9324/queue/Download",
-      "favQueUrl": "http://localhost:9324/queue/Favorite",
-      "igQueUrl": "http://localhost:9324/queue/Ignore",
-      "artQueUrl": "http://localhost:9324/queue/Artist",
-      "stuQueUrl": "http://localhost:9324/queue/Studio",
-      "priorDlQueUrl": "http://localhost:9324/queue/priorDownload",
-      "priorFavQueUrl": "http://localhost:9324/queue/priorFavorite",
-      "searchQueUrl": "http://localhost:9324/queue/Search"
+      "dlQueUrl":       "http://localhost:9324/queue/Download",
+      "igQueUrl":       "http://localhost:9324/queue/Ignore",
+      "artQueUrl":      "http://localhost:9324/queue/Artist",
+      "stuQueUrl":      "http://localhost:9324/queue/Studio",
+      "priorDlQueUrl":  "http://localhost:9324/queue/priorDownload",
+      "priorIgQueUrl":  "http://localhost:9324/queue/priorIgnore",
+      "searchQueUrl":   "http://localhost:9324/queue/Search"
     },
     "poll": {
-      "dlQuePoll": "1",
-      "favQuePoll": "1",
-      "igQuePoll": "1",
+      "dlQuePoll":  "1",
+      "igQuePoll":  "1",
       "artQuePoll": "1",
       "stuQuePoll": "1"
     },
     "msg": {
-      "finMsg": "MQ refilling finished: ",
-      "startMsg": "MQ refilling started: ",
+      "finMsg":     "MQ refilling finished: ",
+      "startMsg":   "MQ refilling started: ",
       "waitingMsg": "Waiting for message..."
     },
     "max": {
@@ -198,7 +185,9 @@
       "italian_language",
       "italian_text",
       "german_language",
-      "german_text"
+      "german_text",
+      "flash",
+      "flash_game"
     ]
   }
 }

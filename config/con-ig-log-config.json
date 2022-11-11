@@ -2,7 +2,7 @@
   "appenders" : {
     "system" : {
       "type" : "file",
-      "filename" : "./log/confirm-favorite.log"
+      "filename" : "./log/confirm-ignore.log"
     }
   },
   "categories" : {

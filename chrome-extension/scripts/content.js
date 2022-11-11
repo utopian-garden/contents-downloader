@@ -59,7 +59,7 @@ chrome.runtime.onMessage.addListener(msg => {
   switch (msg.type) {
     // リンクを取得して開く
     case 'open':
-      document.querySelectorAll('[class*="preview"]:not([class*="favorited"]):not([id*="comment-preview-"])').forEach(link => {
+      document.querySelectorAll('[class*="preview"]:not([id*="comment-preview-"])').forEach(link => {
         window.open(link.parentNode.href);
       });
 
@@ -74,11 +74,11 @@ chrome.runtime.onMessage.addListener(msg => {
 
       break;
 
-    // Favorite に追加
-    case 'favorite':
+    // Ignore に追加
+    case 'ignore':
       document.querySelectorAll('[class*="tag-type-artist"], [class*="tag-type-studio"]').forEach(link => {
         const tagKey = decodeURIComponent(link.firstChild.href.split('=').pop().split('+').shift());
-        addRequest(tagKey, 'Favorite');
+        addRequest(tagKey, 'Ignore');
       });
 
       break;
