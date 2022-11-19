@@ -70,6 +70,7 @@
       "userName":   "ashi_garden"
     },
     "search": {
+      "chanSearchUrl": "https://chan.sankakucomplex.com/?tags=",
       "conSearchParam": "+-rating:safe&limit=1&page=",
       "exSearchParam":  "+order:quality+-rating:safe&limit=10&page=",
       "searchParam":    "+-rating:safe&limit=100&page=",
@@ -88,7 +89,8 @@
       "refererUrl": "https://chan.sankakucomplex.com/ja/post/show/"
     },
     "poll": {
-      "reqPoll": 60
+      "shortPoll": 1,
+      "longPoll": 60
     }
   },
   "db": {
@@ -167,6 +169,12 @@
       "yaoi",
       "bara",
       "trap",
+      "injury",
+      "bruise",
+      "nipple_penetration",
+      "necrophilia",
+      "prolapse",
+      "penectomy",
       "hard_translated",
       "english_language",
       "english_text",
