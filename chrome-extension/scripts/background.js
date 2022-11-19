@@ -97,25 +97,25 @@ function contextClick(info, tab) {
       break;
     case "page-download":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type':'download'});
+        chrome.tabs.sendMessage(tabs[0].id, {'type': 'download'});
       });
 
       break;
     case "page-ignore":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type':'ignore'});
+        chrome.tabs.sendMessage(tabs[0].id, {'type': 'ignore'});
       });
 
       break;
     case "page-open-link":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type':'open'});
+        chrome.tabs.sendMessage(tabs[0].id, {'type': 'open'});
       });
 
       break;
     case "page-get-link":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type':'get'});
+        chrome.tabs.sendMessage(tabs[0].id, {'type': 'get'});
       });
 
       break;
