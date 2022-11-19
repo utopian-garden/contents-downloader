@@ -71,6 +71,7 @@
     },
     "search": {
       "chanSearchUrl": "https://chan.sankakucomplex.com/?tags=",
+      "chanSearchParam": "+order%3Aquality+-rating%3Asafe&commit=Search",
       "conSearchParam": "+-rating:safe&limit=1&page=",
       "exSearchParam":  "+order:quality+-rating:safe&limit=10&page=",
       "searchParam":    "+-rating:safe&limit=100&page=",
