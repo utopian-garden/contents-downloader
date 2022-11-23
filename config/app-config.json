@@ -118,6 +118,8 @@
       "stuQueUrl":      "http://localhost:9324/queue/Studio",
       "priorDlQueUrl":  "http://localhost:9324/queue/priorDownload",
       "priorIgQueUrl":  "http://localhost:9324/queue/priorIgnore",
+      "priorArtQueUrl":  "http://localhost:9324/queue/priorArtist",
+      "priorStuQueUrl":  "http://localhost:9324/queue/priorStudio",
       "searchQueUrl":   "http://localhost:9324/queue/Search"
     },
     "poll": {
