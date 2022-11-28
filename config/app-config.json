@@ -214,6 +214,7 @@
       "overwatch",
       "resident_evil",
       "nier_(series)",
+      "metal_gear_(series)",
       "warcraft",
       "mass_effect",
       "the_last_of_us",
@@ -226,6 +227,7 @@
       "urusei_yatsura",
       "ranma_12",
       "ranma_1/2",
+      "shingeki_no_kyojin",
       "the_legend_of_zelda",
       "splatoon",
       "sonic_the_hedgehog_(series)",
@@ -237,7 +239,13 @@
       "justice_league",
       "dcau",
       "young_justice",
-      "the_simpsons"
+      "tomb_raider",
+      "the_witcher_(series)",
+      "the_incredibles",
+      "steven_universe",
+      "star_wars",
+      "the_simpsons",
+      "roblox"
     ],
     "ngTag": [
       "\\\\\\",
