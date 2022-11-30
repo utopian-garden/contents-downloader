@@ -25,12 +25,10 @@
   },
   "organize": {
     "assortRule": [
-      {"fileExt": ".gif",   "fileType": "gif"},
       {"fileExt": ".jpg",   "fileType": "image"},
       {"fileExt": ".mp4",   "fileType": "video"},
       {"fileExt": ".ogv",   "fileType": "video"},
       {"fileExt": ".png",   "fileType": "image"},
-      {"fileExt": ".swf",   "fileType": "swf"},
       {"fileExt": ".webm",  "fileType": "video"}
     ],
     "fileThre": 500,
@@ -91,6 +89,7 @@
     },
     "poll": {
       "shortPoll": 1,
+      "middlePoll": 10,
       "longPoll": 60
     }
   },
@@ -99,11 +98,13 @@
       "dlTable":  "Download",
       "igTable":  "Ignore",
       "artTable": "Artist",
-      "stuTable": "Studio"
+      "stuTable": "Studio",
+      "tagTable": "Tag"
     },
     "attr": {
       "tagAttr":  "tag",
-      "lastAttr": "last"
+      "lastAttr": "last",
+      "postAttr": "post"
     },
     "msg": {
       "finMsg":   "DB update finished: ",
@@ -249,7 +250,8 @@
     ],
     "ngTag": [
       "\\\\\\",
-      ".."
+      "..",
+      "con"
     ]
   }
 }
