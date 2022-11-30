@@ -79,10 +79,9 @@ chrome.runtime.onMessage.addListener(msg => {
   }
 });
 
-let tagKey;
-
 function contextClick(info, tab) {
   const { menuItemId} = info
+  let tagKey;
 
   switch (menuItemId) {
     case "link-download":
