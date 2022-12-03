@@ -71,7 +71,7 @@
       "chanSearchUrl": "https://chan.sankakucomplex.com/?tags=",
       "chanSearchParam": "+order%3Aquality+-rating%3Asafe&commit=Search",
       "conSearchParam": "+-rating:safe&limit=1&page=",
-      "exSearchParam":  "+order:quality+-rating:safe&limit=10&page=",
+      "exSearchParam":  "+order:quality+-rating:safe&limit=100&page=",
       "searchParam":    "+-rating:safe&limit=100&page=",
       "searchUrl":      "https://capi-v2.sankakucomplex.com/posts?tags=",
       "tagSearchUrl":   "https://capi-v2.sankakucomplex.com/tags?type=",

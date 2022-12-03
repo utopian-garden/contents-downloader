@@ -57,6 +57,10 @@ div.content {
   margin-left: 10px !important;
 }
 
+#post-content {
+  text-align: center !important;
+}
+
 span.thumb {
   height: 320px !important;
   width: 310px !important;
