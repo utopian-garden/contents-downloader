@@ -30,14 +30,18 @@
     }
   },
   "organize": {
-    "assortRule": [
-      {"fileExt": ".jpg",   "fileType": "image"},
-      {"fileExt": ".mp4",   "fileType": "video"},
-      {"fileExt": ".ogv",   "fileType": "video"},
-      {"fileExt": ".png",   "fileType": "image"},
-      {"fileExt": ".webm",  "fileType": "video"}
-    ],
-    "fileThre": 500,
+    "rule": {
+      "assortRule": [
+        {"fileExt": ".jpg",   "fileType": "image"},
+        {"fileExt": ".mp4",   "fileType": "video"},
+        {"fileExt": ".ogv",   "fileType": "video"},
+        {"fileExt": ".png",   "fileType": "image"},
+        {"fileExt": ".webm",  "fileType": "video"}
+      ]
+    },
+    "threshold": {
+      "fileCount": 500
+    },
     "msg": {
       "finMsg":   "File organization finished.",
       "startMsg": "File organization started."
