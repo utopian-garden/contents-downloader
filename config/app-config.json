@@ -68,7 +68,7 @@
     }
   },
   "req": {
-    "common": {
+    "header": {
       "userAgent":  "SCChannelApp/3.0 (Android; black)"
     },
     "auth": {
@@ -144,8 +144,8 @@
       "startMsg":   "MQ refilling started: ",
       "waitingMsg": "Waiting for message..."
     },
-    "max": {
-      "searchQueMax": 2
+    "threshold": {
+      "searchQueMax": 5
     }
   },
   "ng": {
