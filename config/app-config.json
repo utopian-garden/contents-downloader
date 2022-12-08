@@ -1,27 +1,33 @@
 {
   "fs": {
-    "dlImageDir":   "./_image",
-    "dlImageOkDir": "./_image/_ok",
-    "dlImageNgDir": "./_image/_ng",
-    "dlVideoDir":   "./_video",
-    "dlVideoOkDir": "./_video/_ok",
-    "dlVideoNgDir": "./_video/_ng",
-    "igDir":        "D:/Sankaku/_ignored",
-    "igOkDir":      "D:/Sankaku/_ignored/_ok",
-    "igNgDir":      "D:/Sankaku/_ignored/_ng",
-    "artDir":       "D:/Sankaku/_artist",
-    "artOkDir":     "D:/Sankaku/_artist/_ok",
-    "artNgDir":     "D:/Sankaku/_artist/_ng",
-    "stuDir":       "D:/Sankaku/_studio",
-    "stuOkDir":     "D:/Sankaku/_studio/_ok",
-    "stuNgDir":     "D:/Sankaku/_studio/_ng",
-    "orderBat":     "Order.bat",
-    "orderLst":     "Order.lst",
-    "orderPs1":     "Order.ps1",
-    "toolDir":      "./tool",
-    "ignoreExts":   ["swf", "gif"],
-    "imageExts":    ["jpg", "png"],
-    "videoExts":    ["mp4", "ogv", "webm"]
+    "dir": {
+      "dlImageDir":   "./_image",
+      "dlImageOkDir": "./_image/_ok",
+      "dlImageNgDir": "./_image/_ng",
+      "dlVideoDir":   "./_video",
+      "dlVideoOkDir": "./_video/_ok",
+      "dlVideoNgDir": "./_video/_ng",
+      "igDir":        "D:/Sankaku/_ignored",
+      "igOkDir":      "D:/Sankaku/_ignored/_ok",
+      "igNgDir":      "D:/Sankaku/_ignored/_ng",
+      "artDir":       "D:/Sankaku/_artist",
+      "artOkDir":     "D:/Sankaku/_artist/_ok",
+      "artNgDir":     "D:/Sankaku/_artist/_ng",
+      "stuDir":       "D:/Sankaku/_studio",
+      "stuOkDir":     "D:/Sankaku/_studio/_ok",
+      "stuNgDir":     "D:/Sankaku/_studio/_ng",
+      "toolDir":      "./tool"
+    },
+    "file": {
+      "orderBat":     "Order.bat",
+      "orderLst":     "Order.lst",
+      "orderPs1":     "Order.ps1"
+    },
+    "ext": {
+      "ignoreExts":   ["swf", "gif"],
+      "imageExts":    ["jpg", "png"],
+      "videoExts":    ["mp4", "ogv", "webm"]
+    }
   },
   "organize": {
     "assortRule": [
@@ -257,5 +263,10 @@
       "..",
       "con"
     ]
+  },
+  "exitCode": {
+    "unAuthCode": 19190721,
+    "retryCode": 110721,
+    "nextCode": 190721
   }
 }
