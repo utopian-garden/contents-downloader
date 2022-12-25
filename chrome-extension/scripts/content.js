@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
 
   // 検索ボックスのオプションを追加
   let box = document.getElementById('tags');
-  if (box && box !== undefined) {
+  if (box) {
     if (!box.value.includes('order')) {
       box.value += ' order:quality';
     }
@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
 
   // 動画のデフォルト設定の制御
   let video = document.getElementById('image');
-  if (video && video !== undefined) {
+  if (video) {
     if (video.tagName === 'VIDEO') {
       video.volume = 0.25;
       video.loop = false;
@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
   }
 });
 
-//
+// リンクを取得して開く or 文字列をバックグラウンドへ送信
 chrome.runtime.onMessage.addListener(msg => {
   switch (msg.type) {
     // リンクを取得して開く
