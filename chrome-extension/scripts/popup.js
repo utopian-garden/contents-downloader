@@ -79,6 +79,16 @@ document.getElementById('ignore').addEventListener('click', () => {
   addReq('Ignore');
 }, false);
 
+// Artist の addItem を実行するイベントリスナー
+document.getElementById('artist').addEventListener('click', () => {
+  addReq('Artist');
+}, false);
+
+// Studio の addItem を実行するイベントリスナー
+document.getElementById('studio').addEventListener('click', () => {
+  addReq('Studio');
+}, false);
+
 // checkDb を実行するイベントリスナー
 document.getElementById('check').addEventListener('click', () => {
   chkReq();
@@ -111,5 +121,5 @@ document.getElementById('tag-assign').addEventListener('click', () => {
 
 // organizeFile を実行するイベントリスナー
 document.getElementById('file-organize').addEventListener('click', () => {
-  fileOrganize('Download');
+  fileOrganize();
 }, false);
