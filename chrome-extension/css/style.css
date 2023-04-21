@@ -76,3 +76,7 @@ img.preview {
 #headerlogo {
   display: none;
 }
+
+#note-container {
+  display: none;
+}
