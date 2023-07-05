@@ -145,7 +145,7 @@
       "waitingMsg": "Waiting for message..."
     },
     "threshold": {
-      "searchQueMax": 10
+      "searchQueMax": 1
     }
   },
   "ng": {
