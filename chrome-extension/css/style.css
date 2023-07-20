@@ -11,28 +11,11 @@
   display: none;
 }
 
-img#image {
-  max-width: 1000px;
-  max-height: 1280px;
-  object-fit: contain
+#headerlogo {
+  display: none;
 }
 
-video#image {
-  max-width: 1000px;
-  max-height: 1280px;
-  object-fit: contain
-}
-
-#page {
-  transform: scale(0.95, 0.95);
-  margin-top: -35px;
-}
-
-.appdetail-gh-phase02 #main-ntg {
-  margin: 0px 0 0 !important;
-}
-
-.dmm-ntgnavi {
+#note-container {
   display: none;
 }
 
@@ -41,14 +24,17 @@ video#image {
   visibility: hidden;
 }
 
-/* 特定リンクの文字サイズを変更 */
-.tag-type-artist > a {
-  font-size: 120%;
+/* コンテンツの表示調整 */
+img#image {
+  max-width: 1920px;
+  max-height: 1280px;
+  object-fit: contain
 }
 
-/* 特定リンクの文字サイズを変更 */
-.tag-type-studio > a {
-  font-size: 120%;
+video#image {
+  max-width: 1920px;
+  max-height: 1280px;
+  object-fit: contain
 }
 
 /* サムネイルの表示調整 */
@@ -73,10 +59,16 @@ img.preview {
   max-height: 300px;
 }
 
-#headerlogo {
-  display: none;
+/* DMM の表示調整 */
+#page {
+  transform: scale(0.95, 0.95);
+  margin-top: -35px;
 }
 
-#note-container {
+.appdetail-gh-phase02 #main-ntg {
+  margin: 0px 0 0 !important;
+}
+
+.dmm-ntgnavi {
   display: none;
 }
