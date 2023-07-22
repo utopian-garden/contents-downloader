@@ -58,17 +58,3 @@ img.preview {
   max-width: 300px;
   max-height: 300px;
 }
-
-/* DMM の表示調整 */
-#page {
-  transform: scale(0.95, 0.95);
-  margin-top: -35px;
-}
-
-.appdetail-gh-phase02 #main-ntg {
-  margin: 0px 0 0 !important;
-}
-
-.dmm-ntgnavi {
-  display: none;
-}

@@ -1,0 +1,13 @@
+/* DMM の表示調整 */
+#page {
+  transform: scale(0.90, 0.90) !important;
+  margin-top: -75px !important;
+}
+
+#main-ntg {
+  margin: 0px 0 0 !important;
+}
+
+.dmm-ntgnavi {
+  display: none !important;
+}
