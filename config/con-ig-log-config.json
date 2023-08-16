@@ -1,14 +1,16 @@
 {
-  "appenders" : {
-    "system" : {
-      "type" : "file",
-      "filename" : "./log/confirm-ignore.log"
+  "appenders": {
+    "system": {
+      "type": "file",
+      "filename": "./log/confirm-ignore.log"
     }
   },
-  "categories" : {
-    "default" : {
-      "appenders" : ["system"],
-      "level" : "debug"
+  "categories": {
+    "default": {
+      "appenders": [
+        "system"
+      ],
+      "level": "debug"
     }
   }
 }

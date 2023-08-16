@@ -1,14 +1,16 @@
 {
-  "appenders" : {
-    "system" : {
-      "type" : "file",
-      "filename" : "./log/import-artist.log"
+  "appenders": {
+    "system": {
+      "type": "file",
+      "filename": "./log/import-artist.log"
     }
   },
-  "categories" : {
-    "default" : {
-      "appenders" : ["system"],
-      "level" : "debug"
+  "categories": {
+    "default": {
+      "appenders": [
+        "system"
+      ],
+      "level": "debug"
     }
   }
 }

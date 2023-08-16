@@ -1,14 +1,16 @@
 {
-  "appenders" : {
-    "system" : {
-      "type" : "file",
-      "filename" : "./log/import-studio.log"
+  "appenders": {
+    "system": {
+      "type": "file",
+      "filename": "./log/import-studio.log"
     }
   },
-  "categories" : {
-    "default" : {
-      "appenders" : ["system"],
-      "level" : "debug"
+  "categories": {
+    "default": {
+      "appenders": [
+        "system"
+      ],
+      "level": "debug"
     }
   }
 }

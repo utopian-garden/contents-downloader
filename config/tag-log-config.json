@@ -2,7 +2,7 @@
   "appenders": {
     "system": {
       "type": "file",
-      "filename": "./log/exempt.log"
+      "filename": "./log/tag.log"
     }
   },
   "categories": {

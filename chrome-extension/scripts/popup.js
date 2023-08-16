@@ -28,7 +28,7 @@ const chkReq = async () => {
         "Content-Type": "application/json",
       },
     });
-  } catch(err) {
+  } catch (err) {
     alert(err);
   }
 

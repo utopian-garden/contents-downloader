@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     '[class*="tag-type-"] > div > a'
   ).forEach(link => {
     link.setAttribute('href', link.getAttribute('href') +
-        '+order:quality+-rating:safe');
+      '+order:quality+-rating:safe');
   });
 
   // 検索ボックスのオプションを追加

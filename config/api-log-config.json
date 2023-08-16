@@ -1,14 +1,16 @@
 {
-  "appenders" : {
-    "system" : {
-      "type" : "file",
-      "filename" : "./log/api.log"
+  "appenders": {
+    "system": {
+      "type": "file",
+      "filename": "./log/api.log"
     }
   },
-  "categories" : {
-    "default" : {
-      "appenders" : ["system"],
-      "level" : "debug"
+  "categories": {
+    "default": {
+      "appenders": [
+        "system"
+      ],
+      "level": "debug"
     }
   }
 }
