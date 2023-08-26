@@ -20,26 +20,10 @@ chrome.contextMenus.create({
   documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
 
-// コンテキストメニューの Ignore をクリックした場合
-chrome.contextMenus.create({
-  id: "link-ignore",
-  title: "Ignore",
-  contexts: ["link"],
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
-});
-
 // コンテキストメニューの Download をクリックした場合
 chrome.contextMenus.create({
   id: "page-download",
   title: "Download",
-  contexts: ["page"],
-  documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
-});
-
-// コンテキストメニューの Ignore をクリックした場合
-chrome.contextMenus.create({
-  id: "page-ignore",
-  title: "Ignore",
   contexts: ["page"],
   documentUrlPatterns: ["*://chan.sankakucomplex.com/*"]
 });
@@ -80,7 +64,7 @@ chrome.runtime.onMessage.addListener(msg => {
 });
 
 function contextClick(info, tab) {
-  const { menuItemId} = info
+  const { menuItemId } = info
   let tagKey;
 
   switch (menuItemId) {
@@ -89,32 +73,21 @@ function contextClick(info, tab) {
       addRequest(tagKey, 'Download');
 
       break;
-    case "link-ignore":
-      tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
-      addRequest(tagKey, 'Ignore');
-
-      break;
     case "page-download":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type': 'download'});
-      });
-
-      break;
-    case "page-ignore":
-      chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type': 'ignore'});
+        chrome.tabs.sendMessage(tabs[0].id, { 'type': 'download' });
       });
 
       break;
     case "page-open-link":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type': 'open'});
+        chrome.tabs.sendMessage(tabs[0].id, { 'type': 'open' });
       });
 
       break;
     case "page-get-link":
       chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-        chrome.tabs.sendMessage(tabs[0].id, {'type': 'get'});
+        chrome.tabs.sendMessage(tabs[0].id, { 'type': 'get' });
       });
 
       break;
