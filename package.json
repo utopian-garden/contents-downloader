@@ -2,6 +2,7 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.441.0",
     "@aws-sdk/client-sqs": "^3.441.0",
+    "@aws-sdk/lib-dynamodb": "^3.441.0",
     "axios": "^1.6.0",
     "console-stamp-color": "^3.5.3",
     "dynamodb-admin": "^4.6.1",
