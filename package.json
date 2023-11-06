@@ -1,10 +1,21 @@
 {
   "dependencies": {
-    "aws-sdk": "^2.1485.0",
+    "@aws-sdk/client-dynamodb": "^3.441.0",
+    "@aws-sdk/client-sqs": "^3.441.0",
     "console-stamp-color": "^3.5.3",
     "express": "^4.18.2",
     "fs-extra": "^11.1.1",
     "log4js": "^6.9.1",
     "sanitize-filename": "^1.6.3"
-  }
+  },
+  "name": "sankaku",
+  "description": "Contents Download System with Node.js, DynamoDB and ElasticMQ (For my study)",
+  "version": "1.0.0",
+  "main": "api.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
 }

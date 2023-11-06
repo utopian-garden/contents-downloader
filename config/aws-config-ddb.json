@@ -1,0 +1,8 @@
+{
+  "endpoint": "http://localhost:8000",
+  "region": "local-env",
+  "credentials": {
+    "accessKeyId": "fakeMyKeyId",
+    "secretAccessKey": "fakeSecretAccessKey"
+  }
+}
