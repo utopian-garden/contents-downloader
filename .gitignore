@@ -14,3 +14,4 @@ dynamodb_local_latest/third_party_licenses/
 log/
 memo/
 tool/dain_app alpha/
+node_modules/
