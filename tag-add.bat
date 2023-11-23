@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Add
-node ./lib/tag.js Add "yamaishi_(mukoubuti)" "yamaishi -yamaishi_(mukoubuti) -rating:safe" "off"
+node ./lib/tag.js Add "george_hirune" "jo-ji_hirune -george_hirune" "off"
 
 pause
