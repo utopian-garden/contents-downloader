@@ -23,5 +23,11 @@
     "dynamodb-admin": "dynamodb-admin"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/plugin-syntax-import-assertions": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "eslint": "^8.54.0"
+  }
 }
