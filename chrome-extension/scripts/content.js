@@ -37,12 +37,12 @@ window.addEventListener('load', () => {
     nextLink.textContent = '>>';
     link.textContent = '';
     link.appendChild(nextLink);
-  })
+  });
 
   // 画像詳細検索へのリンクに書き換え
   const postContent = document.getElementById('post-content');
   const nodeInfo = document.getElementById('node-info');
-  const imageLink = document.getElementById('highres');
+  const imageLink = document.getElementById('lowres');
 
   if (imageLink && imageLink !== undefined) {
     const detailDiv = document.createElement('div');
@@ -91,7 +91,7 @@ chrome.runtime.onMessage.addListener(msg => {
     case 'get':
       document.querySelectorAll('[class*="fa-magnet"]').forEach(link => {
         chrome.runtime.sendMessage({
-          type: "url",
+          type: 'url',
           value: link.parentNode.href
         });
       });
@@ -103,13 +103,13 @@ chrome.runtime.onMessage.addListener(msg => {
 // addItem リクエストの発行
 const addRequest = (tagKey, addTab) => {
   fetch('http://localhost:3000/addItem', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       'table': addTab,
       'tag': tagKey
     }),
   });
-}
+};
