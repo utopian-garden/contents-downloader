@@ -3,9 +3,9 @@ const addReq = async (addTab) => {
   let addKey = document.getElementById('tag');
 
   fetch('http://localhost:3000/addItem', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       'table': addTab,
@@ -13,8 +13,8 @@ const addReq = async (addTab) => {
     }),
   });
 
-  addKey.value = "";
-}
+  addKey.value = '';
+};
 
 // checkDb の GET リクエストと結果表示
 const chkReq = async () => {
@@ -23,9 +23,9 @@ const chkReq = async () => {
 
   try {
     res = await fetch('http://localhost:3000/checkDb?tag=' + getKey.value, {
-      method: "GET",
+      method: 'GET',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     });
   } catch (err) {
@@ -33,41 +33,41 @@ const chkReq = async () => {
   }
 
   alert((await res.json()).table);
-  getKey.value = "";
-}
+  getKey.value = '';
+};
 
 // refillQueue の POST リクエスト
 const queRefill = async (refillTab) => {
   fetch('http://localhost:3000/refillQueue', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       'table': refillTab
     }),
   });
-}
+};
 
 // organizeFile の POST リクエスト
 const fileOrganize = async () => {
   fetch('http://localhost:3000/organizeFile', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   });
-}
+};
 
 // tagAssign の POST リクエスト
 const tagAssign = async () => {
   fetch('http://localhost:3000/assignTag', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   });
-}
+};
 
 // Download の addItem を実行するイベントリスナー
 document.getElementById('download').addEventListener('click', () => {
