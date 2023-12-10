@@ -3,8 +3,7 @@ window.addEventListener('load', () => {
   document.querySelectorAll(
     '[class*="tag-type-"] > div > a'
   ).forEach(link => {
-    link.setAttribute('href', link.getAttribute('href') +
-      '+order:quality+-rating:safe');
+    link.setAttribute('href', link.getAttribute('href') + '+order:quality+-rating:safe');
   });
 
   // 検索ボックスのオプションを追加
