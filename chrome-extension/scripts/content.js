@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
   // リンクの検索オプションを追加
   document.querySelectorAll(
-    '[class*="tag-type-"] > div > a'
+    '[class*="tag-type-"] > a'
   ).forEach(link => {
     link.setAttribute('href', link.getAttribute('href') + '+order:quality+-rating:safe');
   });
