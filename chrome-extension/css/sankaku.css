@@ -18,6 +18,8 @@
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
   grid-auto-rows: minmax(250px, auto) !important;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .post-preview-container {
