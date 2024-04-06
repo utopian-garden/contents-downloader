@@ -17,6 +17,11 @@
   display: none;
 }
 
+/* ツールチップの非表示 */
+#tooltips {
+  display: none;
+}
+
 /* サムネイル表示調整 */
 .posts-container {
   display: grid !important;
