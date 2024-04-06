@@ -8,6 +8,10 @@
   display: none;
 }
 
+#news-ticker {
+  display: none;
+}
+
 /* 人気のプレビュー非表示 */
 #popular-preview {
   display: none;
