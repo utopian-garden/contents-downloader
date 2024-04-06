@@ -22,6 +22,11 @@
   display: none;
 }
 
+/* 翻訳の非表示 */
+.note-box {
+  display: none;
+}
+
 /* サムネイル表示調整 */
 .posts-container {
   display: grid !important;
