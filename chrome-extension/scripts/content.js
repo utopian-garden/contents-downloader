@@ -22,7 +22,6 @@ window.addEventListener('load', () => {
   let video = document.getElementById('image');
   if (video) {
     if (video.tagName === 'VIDEO') {
-      //video.volume = 0.25;
       video.loop = false;
     }
   }
@@ -41,12 +40,12 @@ window.addEventListener('load', () => {
   // 画像詳細検索へのリンクに書き換え
   const postContent = document.getElementById('post-content');
   const nodeInfo = document.getElementById('node-info');
-  const imageLink = document.getElementById('lowres');
+  const imageLink = document.getElementById('image');
 
   if (imageLink && imageLink !== undefined) {
     const detailDiv = document.createElement('div');
     const detailLink = document.createElement('a');
-    detailLink.href = 'https://ascii2d.net/search/url/' + encodeURIComponent(imageLink.href);
+    detailLink.href = 'https://ascii2d.net/search/url/' + encodeURIComponent(imageLink.src);
     detailLink.textContent = 'Detail';
     detailDiv.appendChild(detailLink);
     postContent.insertBefore(detailDiv, nodeInfo);
