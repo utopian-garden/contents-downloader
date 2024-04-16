@@ -1,3 +1,8 @@
+/* Sticky の表示調整 */
+.stick {
+  top: 170px !important;
+}
+
 /* 新機能非表示 */
 #draggableElement {
   display: none;
@@ -45,6 +50,7 @@
 }
 
 #paginator {
+  display: block !important;
   padding: 1em 0 1em 0 !important;
 }
 
