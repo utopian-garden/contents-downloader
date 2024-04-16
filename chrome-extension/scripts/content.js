@@ -37,6 +37,10 @@ window.addEventListener('load', () => {
     link.appendChild(nextLink);
   });
 
+  // 次ページへのリンクを常に表示
+  var stickyElement = document.getElementById('sticky');
+  stickyElement.classList.add('stick');
+
   // 画像詳細検索へのリンクに書き換え
   const postContent = document.getElementById('post-content');
   const nodeInfo = document.getElementById('node-info');
