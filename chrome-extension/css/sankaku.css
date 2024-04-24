@@ -8,13 +8,22 @@
   display: none;
 }
 
+/* トップバー非表示 */
+.top-bar {
+  display: none !important;
+}
+
 /* ニュース非表示 */
-.carousel {
-  display: none;
+.companion--row {
+  display: none !important;
 }
 
 #news-ticker {
   display: none;
+}
+
+.carousel>a {
+  display: none !important;
 }
 
 /* 人気のプレビュー非表示 */
