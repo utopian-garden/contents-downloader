@@ -39,7 +39,9 @@ window.addEventListener('load', () => {
 
   // 次ページへのリンクを常に表示
   var stickyElement = document.getElementById('sticky');
-  stickyElement.classList.add('stick');
+  if (stickyElement && stickyElement !== undefined) {
+    stickyElement.classList.add('stick');
+  }
 
   // 画像詳細検索へのリンクに書き換え
   const postContent = document.getElementById('post-content');
@@ -47,6 +49,7 @@ window.addEventListener('load', () => {
   const imageLink = document.getElementById('image');
 
   if (imageLink && imageLink !== undefined) {
+    console.log('test');
     const detailDiv = document.createElement('div');
     const detailLink = document.createElement('a');
     detailLink.href = 'https://ascii2d.net/search/url/' + encodeURIComponent(imageLink.src);
