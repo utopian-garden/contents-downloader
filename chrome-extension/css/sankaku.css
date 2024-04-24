@@ -1,6 +1,6 @@
 /* Sticky の表示調整 */
 .stick {
-  top: 170px !important;
+  top: 150px !important;
 }
 
 /* 新機能非表示 */
@@ -20,6 +20,11 @@
 
 #news-ticker {
   display: none;
+}
+
+.carousel {
+  border: none !important;
+  /*background: none !important;*/
 }
 
 .carousel>a {
