@@ -31,6 +31,10 @@
   display: none !important;
 }
 
+.carousel-hide {
+  display: none !important;
+}
+
 /* 人気のプレビュー非表示 */
 #popular-preview {
   display: none;
