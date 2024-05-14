@@ -24,10 +24,9 @@
 
 .carousel {
   border: none !important;
-  /*background: none !important;*/
 }
 
-.carousel>a {
+.carousel-title-news {
   display: none !important;
 }
 
@@ -40,10 +39,11 @@
   display: none;
 }
 
-/* ツールチップの非表示 */
+/* ツールチップの非表示
 #tooltips {
   display: none;
 }
+*/
 
 /* 翻訳の非表示 */
 .note-box {
