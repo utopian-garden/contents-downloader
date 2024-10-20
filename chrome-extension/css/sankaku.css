@@ -39,11 +39,10 @@
   display: none;
 }
 
-/* ツールチップの非表示
-#tooltips {
-  display: none;
+/* ツールチップのリンク無効化 */
+a.post-tooltip-tag-link {
+  pointer-events: none;
 }
-*/
 
 /* 翻訳の非表示 */
 .note-box {
