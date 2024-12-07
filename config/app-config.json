@@ -111,11 +111,11 @@
       "exSearchParam": "+order:quality+-rating:safe&limit=100&page=",
       "searchParam": "&page=",
       "searchParamNext": "&next=",
-      "searchUrl": "https://sankakuapi.com/posts/keyset?lang=ja&default_threshold=2&hide_posts_in_books=in-larger-tags&limit=40&is_recommendation=true&tags=threshold:2+rating:e+rating:q+",
+      "searchUrl": "https://sankakuapi.com/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&is_recommendation=true&tags=threshold:1+rating:e+rating:q+",
       "refererUrl": "https://www.sankakucomplex.com/",
       "tagSearchUrl": "https://capi-v2.sankakucomplex.com/tags?type=",
       "tagSearchParam": "&order=quality&limit=100&page=",
-      "rateSearchUrl": "https://capi-v2.sankakucomplex.com/posts?lang=ja&page=1&limit=1&default_threshold=2&tags=id_range:",
+      "rateSearchUrl": "https://capi-v2.sankakucomplex.com/posts?lang=ja&page=1&limit=1&default_threshold=1&tags=id_range:",
       "artistCode": 1,
       "studioCode": 2
     },
