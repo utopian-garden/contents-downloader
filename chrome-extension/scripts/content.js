@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
   // 動画のデフォルト設定の制御
   let video = document.getElementById('image');
   if (video) {
-    if (video.tagName === 'VIDEO') {
+    if (video.tagName === 'video') {
       video.loop = false;
     }
   }
