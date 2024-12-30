@@ -49,7 +49,6 @@ window.addEventListener('load', () => {
   const imageLink = document.getElementById('image');
 
   if (imageLink && imageLink !== undefined) {
-    console.log('test');
     const detailDiv = document.createElement('div');
     const detailLink = document.createElement('a');
     detailLink.href = 'https://ascii2d.net/search/url/' + encodeURIComponent(imageLink.src);
