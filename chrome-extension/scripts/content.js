@@ -58,6 +58,41 @@ window.addEventListener('load', () => {
   }
 });
 
+// 動的に追加されるツールチップのリンクを無効化
+const targetElement = document.getElementById('tooltips');
+
+if (targetElement) {
+  const observer = new MutationObserver((mutations) => {
+    console.log(1);
+    mutations.forEach((mutation) => {
+      console.log(2);
+      if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+        console.log(3);
+        mutation.addedNodes.forEach((node) => {
+          const checkAndRemoveHref = (node) => {
+            console.log(4);
+            if (node.nodeType === Node.ELEMENT_NODE) {
+              if (node.nodeName === 'A') {
+                console.log(5);
+                const aElement = node;
+                if (aElement.classList.contains('post-tooltip-tag-link')) {
+                  console.log(6);
+                  aElement.removeAttribute('href');
+                }
+              }
+              Array.from(node.childNodes).forEach(checkAndRemoveHref);
+            }
+          };
+          checkAndRemoveHref(node);
+        });
+      }
+    });
+  });
+
+  const config = { childList: true, subtree: true };
+  observer.observe(targetElement, config);
+}
+
 // リンクを取得して開く or 文字列をバックグラウンドへ送信
 chrome.runtime.onMessage.addListener(msg => {
   switch (msg.type) {
