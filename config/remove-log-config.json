@@ -1,0 +1,16 @@
+{
+  "appenders": {
+    "system": {
+      "type": "file",
+      "filename": "./log/remove.log"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "system"
+      ],
+      "level": "debug"
+    }
+  }
+}

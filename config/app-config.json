@@ -161,13 +161,15 @@
       "priorIgQueUrl": "http://localhost:9324/queue/priorIgnore",
       "priorArtQueUrl": "http://localhost:9324/queue/priorArtist",
       "priorStuQueUrl": "http://localhost:9324/queue/priorStudio",
-      "searchQueUrl": "http://localhost:9324/queue/Search"
+      "searchQueUrl": "http://localhost:9324/queue/Search",
+      "removeQueUrl": "http://localhost:9324/queue/Remove"
     },
     "poll": {
       "dlQuePoll": "1",
       "igQuePoll": "1",
       "artQuePoll": "1",
-      "stuQuePoll": "1"
+      "stuQuePoll": "1",
+      "rmQuePoll": "1"
     },
     "msg": {
       "finMsg": "MQ refilling finished: ",
@@ -207,7 +209,6 @@
       "amputee",
       "anthro",
       "asphyxiation",
-      "bara",
       "batman_(series)",
       "bestiality",
       "bioshock",
@@ -220,6 +221,8 @@
       "dcau",
       "dead_or_alive",
       "dragon_ball",
+      "english_language",
+      "english_text",
       "fart",
       "flash_game",
       "flash",
@@ -238,10 +241,8 @@
       "justice_league",
       "korean_language",
       "korean_text",
-      "male_only",
       "mass_effect",
       "metal_gear_(series)",
-      "monochrome",
       "naruto",
       "necrophilia",
       "nier_(series)",
@@ -285,7 +286,6 @@
       "vomit",
       "warcraft",
       "wonder_woman_(series)",
-      "yaoi",
       "young_justice",
       "zoophilia"
     ],

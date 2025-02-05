@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Add
-node ./lib/tag.js Add "penis" "user:ashi_garden tekoki -penis" "off"
+node ./lib/tag.js Add "uneuchi_fuwa" "fuwauneuchi -uneuchi_fuwa" "off"
 
 pause
