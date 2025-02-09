@@ -1,8 +1,6 @@
 window.addEventListener('load', () => {
   // リンクの検索オプションを追加
-  document.querySelectorAll(
-    '[class*="tag-type-"] > a'
-  ).forEach(link => {
+  document.querySelectorAll('[class*="tag-type-"] > a').forEach(link => {
     link.setAttribute('href', link.getAttribute('href') + '+order:quality+-rating:safe');
   });
 
@@ -92,6 +90,26 @@ if (targetElement) {
   const config = { childList: true, subtree: true };
   observer.observe(targetElement, config);
 }
+
+// 動的に追加されるリンクの検索オプションを追加
+function updateLinks() {
+  document.querySelectorAll('a.MuiTypography-root').forEach(link => {
+    let url = new URL(link.href, window.location.origin);
+    let params = new URLSearchParams(url.search);
+
+    if (params.has("tags")) {
+      let tags = params.get("tags");
+      if (!tags.includes("order:quality threshold:1 rating:q rating:e ")) {
+        params.set("tags", "order:quality threshold:1 rating:q rating:e " + tags);
+        url.search = params.toString();
+        link.href = url.toString();
+      }
+    }
+  });
+}
+
+const observer = new MutationObserver(updateLinks);
+observer.observe(document.body, { childList: true, subtree: true });
 
 // リンクを取得して開く or 文字列をバックグラウンドへ送信
 chrome.runtime.onMessage.addListener(msg => {

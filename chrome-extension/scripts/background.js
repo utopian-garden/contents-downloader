@@ -22,7 +22,6 @@ chrome.contextMenus.create({
   ]
 });
 
-// コンテキストメニューの Download をクリックした場合
 chrome.contextMenus.create({
   id: 'path-download',
   title: 'Download',
@@ -90,7 +89,7 @@ function contextClick(info) {
 
       break;
     case 'path-download':
-      tagKey = decodeURIComponent(info.linkUrl.split('/').slice(-1)[0]);
+      tagKey = decodeURIComponent(info.linkUrl.split('+').slice(-1)[0].split('&').shift());
       addRequest(tagKey, 'Download');
 
       break;
