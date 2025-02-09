@@ -17,7 +17,20 @@ chrome.contextMenus.create({
   id: 'link-download',
   title: 'Download',
   contexts: ['link'],
-  documentUrlPatterns: ['*://chan.sankakucomplex.com/*']
+  documentUrlPatterns: [
+    '*://chan.sankakucomplex.com/*',
+  ]
+});
+
+// コンテキストメニューの Download をクリックした場合
+chrome.contextMenus.create({
+  id: 'path-download',
+  title: 'Download',
+  contexts: ['link'],
+  documentUrlPatterns: [
+    '*://www.sankakucomplex.com/*',
+    '*://sankaku.app/*'
+  ]
 });
 
 // コンテキストメニューの Download をクリックした場合
@@ -25,7 +38,9 @@ chrome.contextMenus.create({
   id: 'page-download',
   title: 'Download',
   contexts: ['page'],
-  documentUrlPatterns: ['*://chan.sankakucomplex.com/*']
+  documentUrlPatterns: [
+    '*://chan.sankakucomplex.com/*',
+  ]
 });
 
 // コンテキストメニューの Open をクリックした場合
@@ -71,6 +86,11 @@ function contextClick(info) {
   switch (menuItemId) {
     case 'link-download':
       tagKey = decodeURIComponent(info.linkUrl.split('=').pop().split('+').shift());
+      addRequest(tagKey, 'Download');
+
+      break;
+    case 'path-download':
+      tagKey = decodeURIComponent(info.linkUrl.split('/').slice(-1)[0]);
       addRequest(tagKey, 'Download');
 
       break;
