@@ -61,20 +61,14 @@ const targetElement = document.getElementById('tooltips');
 
 if (targetElement) {
   const observer = new MutationObserver((mutations) => {
-    console.log(1);
     mutations.forEach((mutation) => {
-      console.log(2);
       if (mutation.addedNodes && mutation.addedNodes.length > 0) {
-        console.log(3);
         mutation.addedNodes.forEach((node) => {
           const checkAndRemoveHref = (node) => {
-            console.log(4);
             if (node.nodeType === Node.ELEMENT_NODE) {
               if (node.nodeName === 'A') {
-                console.log(5);
                 const aElement = node;
                 if (aElement.classList.contains('post-tooltip-tag-link')) {
-                  console.log(6);
                   aElement.removeAttribute('href');
                 }
               }
