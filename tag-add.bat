@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Add
-node ./lib/tag.js Add "uneuchi_fuwa" "fuwauneuchi -uneuchi_fuwa" "off"
+node ./lib/tag.js Add "prolapse" "uterine_prolapse -prolapse" "off"
 
 pause
