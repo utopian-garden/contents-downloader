@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
   // リンクの検索オプションを追加
   document.querySelectorAll('[class*="tag-type-"] > a').forEach(link => {
-    link.setAttribute('href', link.getAttribute('href') + '+order:quality+-rating:safe');
+    link.setAttribute('href', link.getAttribute('href') + '+order:quality+rating:explicit');
   });
 
   // 検索ボックスのオプションを追加
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
     }
 
     if (!box.value.includes('rating')) {
-      box.value += ' -rating:safe';
+      box.value += ' rating:explicit';
     }
   }
 
@@ -93,8 +93,8 @@ function updateLinks() {
 
     if (params.has("tags")) {
       let tags = params.get("tags");
-      if (!tags.includes("order:quality threshold:1 rating:q rating:e ")) {
-        params.set("tags", "order:quality threshold:1 rating:q rating:e " + tags);
+      if (!tags.includes("order:quality threshold:1 rating:e ")) {
+        params.set("tags", "order:quality threshold:1 rating:e " + tags);
         url.search = params.toString();
         link.href = url.toString();
       }
