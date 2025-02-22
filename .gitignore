@@ -4,11 +4,9 @@
 *.lnk
 *.png
 *.txt
-_artist/
 _image/
 _video/
 _ignored/
-_studio/
 dynamodb_local_latest/DynamoDBLocal_lib/
 dynamodb_local_latest/third_party_licenses/
 log/

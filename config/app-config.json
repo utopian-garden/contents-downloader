@@ -12,12 +12,6 @@
       "igDir": "D:/Sankaku/_ignored",
       "igOkDir": "D:/Sankaku/_ignored/_ok",
       "igNgDir": "D:/Sankaku/_ignored/_ng",
-      "artDir": "D:/Sankaku/_artist",
-      "artOkDir": "D:/Sankaku/_artist/_ok",
-      "artNgDir": "D:/Sankaku/_artist/_ng",
-      "stuDir": "D:/Sankaku/_studio",
-      "stuOkDir": "D:/Sankaku/_studio/_ok",
-      "stuNgDir": "D:/Sankaku/_studio/_ng",
       "toolDir": "./tool"
     },
     "file": {
@@ -142,8 +136,6 @@
     "tab": {
       "dlTable": "Download",
       "igTable": "Ignore",
-      "artTable": "Artist",
-      "stuTable": "Studio",
       "tagTable": "Tag"
     },
     "attr": {
@@ -160,20 +152,14 @@
     "url": {
       "dlQueUrl": "http://localhost:9324/queue/Download",
       "igQueUrl": "http://localhost:9324/queue/Ignore",
-      "artQueUrl": "http://localhost:9324/queue/Artist",
-      "stuQueUrl": "http://localhost:9324/queue/Studio",
       "priorDlQueUrl": "http://localhost:9324/queue/priorDownload",
       "priorIgQueUrl": "http://localhost:9324/queue/priorIgnore",
-      "priorArtQueUrl": "http://localhost:9324/queue/priorArtist",
-      "priorStuQueUrl": "http://localhost:9324/queue/priorStudio",
       "searchQueUrl": "http://localhost:9324/queue/Search",
       "removeQueUrl": "http://localhost:9324/queue/Remove"
     },
     "poll": {
       "dlQuePoll": "1",
       "igQuePoll": "1",
-      "artQuePoll": "1",
-      "stuQuePoll": "1",
       "rmQuePoll": "1"
     },
     "msg": {
