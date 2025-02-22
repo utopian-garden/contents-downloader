@@ -110,7 +110,7 @@
       "exSearchParam": "+order:quality+rating:explicit&limit=100&page=",
       "searchParam": "&page=",
       "searchParamNext": "&next=",
-      "searchUrl": "https://sankakuapi.com/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&is_recommendation=true&tags=threshold:1+rating:e+",
+      "postSearchUrl": "https://sankakuapi.com/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&is_recommendation=true&tags=threshold:1+rating:e+",
       "refererUrl": "https://sankaku.app/",
       "tagSearchUrl": "https://capi-v2.sankakucomplex.com/tags?type=",
       "tagSearchParam": "&order=quality&limit=100&page=",

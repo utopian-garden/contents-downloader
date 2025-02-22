@@ -1,10 +1,10 @@
 @echo off
 
-title Download
+title Download-Full
 
 :loop
 
-node ./lib/download.js
+node ./lib/download.js Full
 
 goto :loop
 
