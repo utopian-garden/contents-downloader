@@ -79,16 +79,6 @@ document.getElementById('ignore').addEventListener('click', () => {
   addReq('Ignore');
 }, false);
 
-// Artist の addItem を実行するイベントリスナー
-document.getElementById('artist').addEventListener('click', () => {
-  addReq('Artist');
-}, false);
-
-// Studio の addItem を実行するイベントリスナー
-document.getElementById('studio').addEventListener('click', () => {
-  addReq('Studio');
-}, false);
-
 // checkDb を実行するイベントリスナー
 document.getElementById('check').addEventListener('click', () => {
   chkReq();
@@ -102,16 +92,6 @@ document.getElementById('dl-refill').addEventListener('click', () => {
 // Ignore の refillQueue を実行するイベントリスナー
 document.getElementById('ig-refill').addEventListener('click', () => {
   queRefill('Ignore');
-}, false);
-
-// Artist の refillQueue を実行するイベントリスナー
-document.getElementById('art-refill').addEventListener('click', () => {
-  queRefill('Artist');
-}, false);
-
-// Studio の refillQueue を実行するイベントリスナー
-document.getElementById('stu-refill').addEventListener('click', () => {
-  queRefill('Studio');
 }, false);
 
 // tagAssign を実行するイベントリスナー
