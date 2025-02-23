@@ -154,13 +154,11 @@
       "igQueUrl": "http://localhost:9324/queue/Ignore",
       "priorDlQueUrl": "http://localhost:9324/queue/priorDownload",
       "priorIgQueUrl": "http://localhost:9324/queue/priorIgnore",
-      "searchQueUrl": "http://localhost:9324/queue/Search",
-      "removeQueUrl": "http://localhost:9324/queue/Remove"
+      "searchQueUrl": "http://localhost:9324/queue/Search"
     },
     "poll": {
       "dlQuePoll": "1",
-      "igQuePoll": "1",
-      "rmQuePoll": "1"
+      "igQuePoll": "1"
     },
     "msg": {
       "finMsg": "MQ refilling finished: ",
