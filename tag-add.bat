@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Add
-node ./lib/tag.js Add "marvel_comics" "hydrafxx spider-man_(series) -marvel_comics" "off"
+node ./lib/tag.js Add "metroid" "laosduude samus_aran -metroid" "off"
 
 pause
