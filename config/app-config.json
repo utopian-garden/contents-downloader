@@ -27,7 +27,8 @@
       "imageExts": [
         "jpg",
         "png",
-        "webp"
+        "webp",
+        "avif"
       ],
       "videoExts": [
         "mp4",
@@ -61,6 +62,10 @@
         },
         {
           "fileExt": ".webp",
+          "fileType": "image"
+        },
+        {
+          "fileExt": ".avif",
           "fileType": "image"
         }
       ]
@@ -200,16 +205,19 @@
       "ai-created",
       "american_dad",
       "american_mcgee's_alice",
+      "among_us",
       "amputee",
       "andavaverse",
       "anthro",
       "apex_legends",
+      "archie_comics",
       "arms_(game)",
       "arthur_(series)",
       "asphyxiation",
       "assassin's_creed_(series)",
       "atomic_heart",
       "avatar_(series)",
+      "ok_k.o.!_let's_be_heroes",
       "baldur's_gate_3",
       "batman_(series)",
       "bayonetta",
@@ -289,6 +297,7 @@
       "hard_translated",
       "harry_potter",
       "haydee_(game)",
+      "hazbin_hotel",
       "helltaker",
       "heroes_of_the_storm",
       "hitman",
@@ -348,6 +357,7 @@
       "overwatch",
       "paladins_champions_of_the_realm",
       "paragon",
+      "pathfinder",
       "pee_stain",
       "penectomy",
       "phineas_and_ferb",
