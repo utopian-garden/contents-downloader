@@ -1,6 +1,6 @@
 @echo off
 
 @title Get Artists
-node ./lib/get-artists.js "multiple_girls genshin_impact hentai_music_video 3d"
+node ./lib/get-artists.js "zenless_zone_zero 3d amv"
 
 pause
