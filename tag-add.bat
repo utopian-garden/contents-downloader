@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Add
-node ./lib/tag.js Add "cyberpunk_(series)" "kaliethva cyberpunk:_edgerunners -cyberpunk_(series)" "off"
+node ./lib/tag.js Add "fanza_games" "detariki_z -fanza_games" "off"
 
 pause
