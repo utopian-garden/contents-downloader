@@ -2,23 +2,15 @@ Import-Csv Order.lst | ForEach-Object {
   $ext = $_.extension
   $dir = $_.directory
 
-  $INCLUDES = @("*.$ext")
-  Get-ChildItem -Include $INCLUDES -File *.* `
-  | ForEach-Object -Process {
-    if (!(Test-Path $dir)) {
-      New-Item $dir -ItemType Directory
-    }
+  # 指定拡張子のファイルを取得
+  $files = Get-ChildItem -Filter "*.$ext" -File
 
-    Move-Item -literalpath $_ $dir -force
-  }
+  # ファイルが存在する場合のみ処理を実行
+  if ($files) {
+    # 必要なディレクトリを一括作成（存在しない場合のみ）
+    New-Item -Path $dir, "$dir\ok", "$dir\_safe" -ItemType Directory -Force | Out-Null
 
-  if (Test-Path $dir) {
-    if (!(Test-Path $dir\ok)) {
-      New-Item $dir\ok -ItemType Directory
-    }
-
-    if (!(Test-Path $dir\_safe)) {
-      New-Item $dir\_safe -ItemType Directory
-    }
+    # 取得したファイルを移動
+    $files | Move-Item -Destination $dir -Force
   }
 }

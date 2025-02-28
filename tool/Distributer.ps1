@@ -1,12 +1,10 @@
+# コピーするファイルのリスト
 $filesToCopy = @("Order.bat", "Order.ps1", "Order.lst")
 
-$directories = Get-ChildItem E:\Sankaku\_image -Directory
-$directories += Get-ChildItem E:\Sankaku\_video -Directory
-$directories += Get-ChildItem E:\Sankaku\_image\_ok -Directory
-$directories += Get-ChildItem E:\Sankaku\_video\_ok -Directory
+# すべての対象ディレクトリを取得（1回の処理でまとめる）
+$directories = Get-ChildItem E:\Sankaku\_image, E:\Sankaku\_video, E:\Sankaku\_image\_ok, E:\Sankaku\_video\_ok -Directory
 
+# 各ディレクトリへまとめてコピー
 foreach ($dir in $directories) {
-  foreach ($file in $filesToCopy) {
-    Copy-Item $file $dir.FullName -Force
-  }
+  Copy-Item -Path $filesToCopy -Destination $dir.FullName -Force
 }

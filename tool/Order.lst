@@ -3,8 +3,6 @@ jpg,image
 png,image
 webp,image
 avif,image
-gif,gif
-swf,swf
 webm,video
 ogv,video
 mp4,video
