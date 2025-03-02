@@ -120,6 +120,9 @@
       "tagSearchUrl": "https://capi-v2.sankakucomplex.com/tags?type=",
       "tagSearchParam": "&limit=100&page=",
       "rateSearchUrl": "https://capi-v2.sankakucomplex.com/posts?lang=ja&page=1&limit=1&default_threshold=1&tags=id_range:",
+      "v2SearchUrl": "https://sankakuapi.com/v2/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&tags=threshold:1+",
+      "v2SearchParam": "&page=",
+      "v2SearchParamNext": "&next=",
       "artistCode": 1,
       "studioCode": 2
     },
@@ -130,6 +133,10 @@
       "tagUrl": "https://capi-v2.sankakucomplex.com/posts/",
       "tagParam": "?lang=en",
       "refererUrl": "https://chan.sankakucomplex.com/ja/post/show/"
+    },
+    "vote": {
+      "voteUrl": "https://capi-v2.sankakucomplex.com/posts/",
+      "voteParam": "/vote?lang=ja"
     },
     "poll": {
       "shortPoll": 1,
@@ -226,6 +233,7 @@
       "bioshock",
       "bleach",
       "bloodborne",
+      "bloodrayne",
       "borderlands",
       "bruise",
       "call_of_duty",
@@ -268,6 +276,7 @@
       "dragon_quest",
       "dragon's_crown",
       "drinking_urine",
+      "dungeons_&_dragons",
       "eating_semen",
       "ed_edd_n_eddy",
       "elden_ring",
@@ -299,6 +308,7 @@
       "god_of_war_(series)",
       "golden_shower",
       "grand_theft_auto",
+      "gravity_daze",
       "guild_wars",
       "guro",
       "halo_(series)",
@@ -326,6 +336,7 @@
       "italian_text",
       "jojo's_bizarre_adventure",
       "justice_league",
+      "kamen_rider",
       "kid_icarus",
       "kimetsu_no_yaiba",
       "koikatsu",
