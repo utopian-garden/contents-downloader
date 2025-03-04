@@ -1,6 +1,6 @@
 @echo off
 
 @title Get Artists
-node ./lib/get-artists.js "zenless_zone_zero 3d amv"
+node ./lib/get-artists.js "user:ashi_garden mikumikudance"
 
 pause
