@@ -1,0 +1,16 @@
+{
+  "appenders": {
+    "system": {
+      "type": "file",
+      "filename": "./log/search.log"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "system"
+      ],
+      "level": "debug"
+    }
+  }
+}
