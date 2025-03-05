@@ -109,20 +109,11 @@
       "userName": "ashi_garden"
     },
     "search": {
-      "chanSearchUrl": "https://chan.sankakucomplex.com/?tags=",
-      "chanSearchParam": "+rating%explicit&commit=Search",
-      "conSearchParam": "+rating:explicit&limit=1&page=",
-      "exSearchParam": "+rating:explicit&limit=100&page=",
-      "searchParam": "&page=",
-      "searchParamNext": "&next=",
-      "postSearchUrl": "https://sankakuapi.com/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&is_recommendation=true&tags=threshold:1+rating:e+",
       "refererUrl": "https://sankaku.app/",
-      "tagSearchUrl": "https://capi-v2.sankakucomplex.com/tags?type=",
-      "tagSearchParam": "&limit=100&page=",
       "rateSearchUrl": "https://capi-v2.sankakucomplex.com/posts?lang=ja&page=1&limit=1&default_threshold=1&tags=id_range:",
-      "v2SearchUrl": "https://sankakuapi.com/v2/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&tags=threshold:1+rating:e+",
-      "v2SearchParam": "&page=",
-      "v2SearchParamNext": "&next=",
+      "postSearchUrl": "https://sankakuapi.com/v2/posts/keyset?lang=ja&default_threshold=1&hide_posts_in_books=in-larger-tags&limit=40&tags=threshold:1+rating:e+",
+      "postSearchParam": "&page=",
+      "postSearchParamNext": "&next=",
       "artistCode": 1,
       "studioCode": 2
     },
@@ -131,8 +122,7 @@
     },
     "tag": {
       "tagUrl": "https://capi-v2.sankakucomplex.com/posts/",
-      "tagParam": "?lang=en",
-      "refererUrl": "https://chan.sankakucomplex.com/ja/post/show/"
+      "tagParam": "?lang=en"
     },
     "vote": {
       "voteUrl": "https://capi-v2.sankakucomplex.com/posts/",
