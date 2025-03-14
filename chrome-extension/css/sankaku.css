@@ -82,3 +82,8 @@ video#image {
 #post-content {
   text-align: center !important;
 }
+
+/* タグのテキストボックスを広げる */
+textarea#post_tags {
+  min-height: 400px !important;
+}
