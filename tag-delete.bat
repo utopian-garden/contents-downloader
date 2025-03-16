@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Delete
-node ./lib/tag.js Del "akari-chan_(character)" "akari-chan_(character)" "off"
+node ./lib/tag.js Del "potez_(mmd)" "potez_(mmd) potez_(quappa-el)" "off"
 
 pause
