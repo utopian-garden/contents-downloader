@@ -7,12 +7,12 @@ window.addEventListener('load', () => {
   // 検索ボックスのオプションを追加
   let box = document.getElementById('tags');
   if (box) {
-    if (!box.value.includes('rating')) {
-      box.value += ' rating:explicit';
-    }
-
     if (!box.value.includes('order')) {
       box.value += ' order:quality';
+    }
+
+    if (!box.value.includes('rating')) {
+      box.value += ' rating:explicit';
     }
   }
 
