@@ -11,6 +11,8 @@
     "fs-extra": "^11.2.0",
     "got": "^14.4.5",
     "log4js": "^6.9.1",
+    "openid-client": "^6.4.1",
+    "puppeteer": "^24.6.0",
     "sanitize-filename": "^1.6.3"
   },
   "name": "sankaku",

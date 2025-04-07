@@ -102,12 +102,6 @@
     "header": {
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
     },
-    "auth": {
-      "authPrefix": "Bearer ",
-      "authUrl": "https://capi-v2.sankakucomplex.com/auth/token?lang=japanese",
-      "passWord": "M@jimu$ume7",
-      "userName": "ashi_garden"
-    },
     "search": {
       "refererUrl": "https://sankaku.app/",
       "rateSearchUrl": "https://capi-v2.sankakucomplex.com/posts?lang=ja&page=1&limit=1&default_threshold=1&tags=id_range:",
@@ -132,6 +126,28 @@
       "shortPoll": 1,
       "middlePoll": 10,
       "longPoll": 60
+    }
+  },
+  "auth": {
+    "oidc": {
+      "server_url": "https://login.sankakucomplex.com/oidc/.well-known/openid-configuration",
+      "client_id": "sankaku-web-app",
+      "redirect_uri": "https://sankaku.app/sso/callback",
+      "state": "return_uri=https://sankaku.app/ja",
+      "token_endpoint": "https://login.sankakucomplex.com/auth/token"
+    },
+    "credentials": {
+      "email": "nagisame",
+      "password": "M@jimu$ume7"
+    },
+    "truncate": {
+      "exts": [
+        ".avif",
+        ".gif",
+        ".png",
+        ".svg",
+        ".webp"
+      ]
     }
   },
   "db": {
