@@ -1,6 +1,6 @@
 @echo off
 
 @title Tag Delete
-node ./lib/tag.js Del "mima_(mijirushi_box) mima" "mima" "dummy" "off"
+node ./lib/tag.js Del "ellen ellen_hadar" "ellen" "dummy" "off"
 
 pause
