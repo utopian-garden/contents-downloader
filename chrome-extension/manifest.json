@@ -24,6 +24,14 @@
       "css": [
         "css/dmm.css"
       ]
+    },
+    {
+      "matches": [
+        "*://nijie.info/*"
+      ],
+      "css": [
+        "css/nijie.css"
+      ]
     }
   ],
   "background": {

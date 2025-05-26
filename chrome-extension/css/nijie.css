@@ -1,0 +1,49 @@
+#main {
+  width: 100% !important;
+}
+
+#main-left {
+  display: none !important;
+}
+
+#center_column {
+  width: 100% !important;
+  float: center !important;
+}
+
+#right_column {
+  display: none !important;
+}
+
+.center2 {
+  display: none !important;
+}
+
+.left_column {
+  display: none !important;
+}
+
+#sort_tab {
+  display: none !important;
+}
+
+.block-border {
+  display: none !important;
+}
+
+.mozamoza {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.nijie {
+  margin: 20px 0px 20px 0px !important;
+  width: 240px !important;
+  height: 240px !important;
+}
+
+.nijiedao {
+  width: 240px !important;
+  height: 240px !important;
+}
