@@ -86,7 +86,7 @@ if (targetElement) {
 }
 
 // 動的に追加されるリンクの検索オプションを追加
-function updateLinks() {
+const updateLinks = () => {
   document.querySelectorAll('a.MuiTypography-root').forEach(link => {
     let url = new URL(link.href, window.location.origin);
     let params = new URLSearchParams(url.search);
@@ -100,7 +100,7 @@ function updateLinks() {
       }
     }
   });
-}
+};
 
 const observer = new MutationObserver(updateLinks);
 observer.observe(document.body, { childList: true, subtree: true });

@@ -2,13 +2,27 @@
   width: 100% !important;
 }
 
-#main-left {
-  display: none !important;
-}
-
 #center_column {
   width: 100% !important;
   float: center !important;
+}
+
+#main-center-none {
+  float: none !important;
+  margin: auto !important;
+  width: 100% !important;
+}
+
+#members_dlsite_left {
+  width: 100% !important;
+}
+
+#members_right {
+  display: none !important;
+}
+
+#main-left {
+  display: none !important;
 }
 
 #right_column {
@@ -46,4 +60,17 @@
 .nijiedao {
   width: 240px !important;
   height: 240px !important;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.clearfix>div.nijie>p.title {
+  margin-top: 5px !important;
+}
+
+.mem-index>div.nijie>p.title {
+  margin-top: 15px !important;
 }
