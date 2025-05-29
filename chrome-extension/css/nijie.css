@@ -1,16 +1,30 @@
 #main {
   width: 100% !important;
+  float: none !important;
+  margin: auto !important;
 }
 
 #center_column {
-  width: 100% !important;
-  float: center !important;
+  display: flex !important;
+  width: 90% !important;
+  float: none !important;
+  margin: auto !important;
+}
+
+#main-left {
+  margin: 0 0 0 20px !important;
 }
 
 #main-center-none {
+  width: 90% !important;
   float: none !important;
   margin: auto !important;
+}
+
+#main-left-main {
   width: 100% !important;
+  float: none !important;
+  margin: auto !important;
 }
 
 #members_dlsite_left {
@@ -18,10 +32,6 @@
 }
 
 #members_right {
-  display: none !important;
-}
-
-#main-left {
   display: none !important;
 }
 
