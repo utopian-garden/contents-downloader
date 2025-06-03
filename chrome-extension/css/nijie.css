@@ -84,3 +84,7 @@ img {
 .mem-index>div.nijie>p.title {
   margin-top: 15px !important;
 }
+
+.nijie:has(img[src$="ng_image.png"]) {
+  display: none !important;
+}
