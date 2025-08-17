@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "_image": true,
+    "_video": true
+  },
+  "search.exclude": {
+    "_image": true,
+    "_video": true
+  }
+}

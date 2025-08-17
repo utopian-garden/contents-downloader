@@ -91,3 +91,8 @@ video#image {
 textarea#post_tags {
   min-height: 400px !important;
 }
+
+/* 広告非表示 */
+.iframe_row {
+  display: none !important;
+}
