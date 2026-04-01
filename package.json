@@ -3,7 +3,7 @@
     "@aws-sdk/client-dynamodb": "^3.782.0",
     "@aws-sdk/client-sqs": "^3.782.0",
     "@aws-sdk/lib-dynamodb": "^3.782.0",
-    "axios": "^1.8.4",
+    "axios": "^1.13.5",
     "console-stamp-color": "^3.5.3",
     "cors": "^2.8.5",
     "dynamodb-admin": "^5.1.3",
